@@ -54,3 +54,17 @@ $(document).ready(function(){
 });
 
 
+/* form validation */
+
+$("#form-contact").validate({
+  errorClass:'error',            
+  rules: {
+    fullname: "required",
+    message: "required",
+    emailaddress: {
+      required: true,
+      email: true
+    }
+  }
+});
+

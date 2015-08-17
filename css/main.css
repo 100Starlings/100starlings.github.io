@@ -65,6 +65,78 @@ hr {
     margin: 0;
 }
 
+
+.input{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    padding: 0 10px 1px 10px;
+    font-weight: bold;
+    background: #f2f2f2;
+    border: 0;
+    border: solid 1px #f2f2f2;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
+}
+
+.textarea{
+    display: inline-block;
+    width: 100%;
+    min-height: 60px;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: bold;
+    background: #f2f2f2;
+    border: 0;
+    border: solid 1px #f2f2f2;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
+    resize: vertical;
+}
+
+.input:focus, .textarea:focus{
+    border-color: #eeeeee;
+    outline: 0;
+    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
+}
+
+.input-date{
+    background: #f2f2f2 url(../img/bg_calendar.png) right center no-repeat;
+    background-size: 20px 20px;
+}
+
+label{
+    display: block;
+    cursor: pointer; 
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.error {
+    border: 1px solid #ef3434 !important;
+}
+
+label.error {
+    background: #ef3434;
+    color: #fff;
+    margin: -10px 0 0;
+    font-size: 11px;
+    padding: 0 5px;
+    font-style: italic;
+    text-transform: none;
+    border: 0 !important;
+}
+
 /* grid */
 
 .block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
@@ -519,6 +591,37 @@ section.break-right .container span{
     right: 300px;
 }
 
+/* subpages */
+
+section.subheader {
+    width: 100%;
+    height: 400px;    
+    color: #fff;
+}
+
+section.subheader .container {
+    padding-top: 160px;
+}
+
+section.subheader .container h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+section.subheader .container h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 300;
+    max-width: 760px;
+    margin: 20px auto;
+}
+
 /* clients */
 
 section#clients{
@@ -543,101 +646,32 @@ section#clients .block{
 
 /* team */
 
-.tabs{
-    list-style: none;
-    margin-top: 40px;
+section.subheader-team {
+    background: url(../img/bg_team.jpg) center center no-repeat;
+    background-size: cover;
 }
 
-.tabs li.block{  
-    cursor: pointer;  
-    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
+section.content#team .profile{
+    margin-bottom: 50px;
 }
 
-.tabs li.block:hover{
-    color: #fff;
-    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
-    opacity: 0.70;
-}
-
-.tabs li.block img{    
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.75;
-    -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
-    border-bottom: solid 10px transparent;
-}
-
-ul.tabs li.current img{
-   -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    opacity: 1;
-    border-bottom: solid 8px #00a79d;
-}
-
-ul.tabs li.current{
-   position: relative;
-}
-
-ul.tabs li.current::after {
-    border-top: 10px solid #00a79d;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    width: 0;
-    height: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -6px;
-    right: 30px;
-    margin-left: -12px;
-}
-
-.tab-content{
-    display: none;
-}
-
-.tab-content.current{
-    display: block;
-}
-
-.tab-content h1{
+section.content#team h1{
     font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0 0;
+    padding: 0;
 }
 
-section.content .tab-content h1 {
-    font-size: 20px;
-    padding: 10px 0;
-}
-
-section.content .tab-content ul {
-    list-style: none;
+section.content#team h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: #00a79d;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
-section.content .tab-content ul li{
-    position: relative;
-    display: inline-block;
-    width: 36%;
-    margin: 0 0 0 20px;
-    padding: 0;
-    font-size: 14px;
-}
-
-section.content .tab-content ul li:before{
-    position: absolute;
-    content: "\f00c";
-    font-family: FontAwesome;    
-    color: #00a79d;
-    font-size: 14px;
-    left: -20px;
-}
-
-section.content .tab-content .social{
-    padding-top: 15px;
-}
-
-section.content .tab-content .social a {
+section.content#team .social a {
     display: inline-block;
     width: 20px;
     height: 24px;
@@ -648,10 +682,36 @@ section.content .tab-content .social a {
     color: #fff;
 }
 
-section.content .tab-content .social a.twitter:hover{background: #55acee;}
-section.content .tab-content .social a.linkedin:hover{background: #0077b5;}
-section.content .tab-content .social a.github:hover{background: #333333;}
-section.content .tab-content .social a.blog:hover{background: #f57d00;}
+section.content#team .social a.twitter:hover{background: #55acee;}
+section.content#team .social a.linkedin:hover{background: #0077b5;}
+section.content#team .social a.github:hover{background: #333333;}
+section.content#team .social a.blog:hover{background: #f57d00;}
+
+/* contact */
+
+section#contact #form-contact{
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+section#contact #form-contact button{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: 0;
+    background: linear-gradient(270deg, rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+section#contact #form-contact button:hover{
+    color: #c0e4fe;
+}
+
 
 /* responsive */
 
