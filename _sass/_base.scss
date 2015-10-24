@@ -1,5 +1,3 @@
-@import url('normalize.css');
-@import url('font-awesome.min.css');
 @import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300');
 
@@ -13,9 +11,9 @@ textarea {
 
 body {
     position: relative;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 24px;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
     padding: 0;
     margin: 0;
 }
@@ -50,12 +48,12 @@ h1 {
     text-transform: uppercase;
 }
 
-p { 
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+p {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 24px;
-    font-size: 15px;    
+    font-size: 15px;
     line-height: 24px;
-    font-weight: 400;    
+    font-weight: 400;
     color: #4a4a4a;
 }
 
@@ -111,7 +109,7 @@ hr {
 
 label{
     display: block;
-    cursor: pointer; 
+    cursor: pointer;
     margin-bottom: 3px;
     font-size: 13px;
     font-weight: bold;
@@ -161,7 +159,7 @@ label.error {
 .block-group {
   list-style-type: none;
   padding: 0;
-  margin: -2px -10px; 
+  margin: -2px -10px;
 }
 
 .block-group > .block-group {
@@ -193,7 +191,7 @@ label.error {
     max-width:100% !important;
     height:auto;
     display:block
-} 
+}
 
 /* phone-menu */
 
@@ -207,7 +205,7 @@ label.error {
     overflow-y:auto;
     overflow-x:hidden;
     text-align:center;
-    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));  
+    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));
 }
 
 .btn-menu {
@@ -239,7 +237,7 @@ label.error {
 }
 
 .btn-menu span {
-    display: block;    
+    display: block;
     position: absolute;
     height: 3px;
     width: 24px;
@@ -312,7 +310,7 @@ label.error {
 
 .phone-menu ul.menu li{
     margin: 0;
-    padding: 0;       
+    padding: 0;
     display: none;
 }
 
@@ -343,7 +341,7 @@ header  {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));    
+    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));
     opacity: 0;
     -moz-transition:opacity 0.2s ease-in-out; -webkit-transition:opacity 0.2s ease-in-out
 }
@@ -383,10 +381,10 @@ header ul.menu{
     position: fixed;
     display: inline-block;
     top: 30px;
-    right: 40px;  
+    right: 40px;
     list-style: none;
     margin: 0;
-    padding: 8px 0;  
+    padding: 8px 0;
     -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;
 }
 
@@ -398,7 +396,7 @@ header ul.menu{
 header ul.menu li{
     display: inline-block;
     margin: 0;
-    padding: 0;       
+    padding: 0;
 }
 
 header ul.menu li a{
@@ -428,7 +426,7 @@ header ul.menu li a:hover{
     transition:transform 500ms cubic-bezier(0.645,0.045,0.355,1);
 }
 
-section {    
+section {
     position: relative;
     width: 100%;
     margin: 0;
@@ -574,7 +572,7 @@ section.break {
 }
 
 section.break .container span{
-    position: absolute; 
+    position: absolute;
     display: inline-block;
     width: 100px;
     height: 60px;
@@ -595,7 +593,7 @@ section.break-right .container span{
 
 section.subheader {
     width: 100%;
-    height: 400px;    
+    height: 400px;
     color: #fff;
 }
 
@@ -712,6 +710,12 @@ section#contact #form-contact button:hover{
     color: #c0e4fe;
 }
 
+footer {
+  margin: 1em 0;
+  text-align: center;
+  color: lightgray;
+}
+
 
 /* responsive */
 
@@ -776,7 +780,7 @@ header ul.menu {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));    
+    background: linear-gradient(270deg,  rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));
     opacity: 1;
     -moz-transition:opacity 0.2s ease-in-out; -webkit-transition:opacity 0.2s ease-in-out
 }
@@ -870,7 +874,7 @@ section .container{
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; 
+    content: " ";
     display: table;
 }
 
@@ -889,10 +893,10 @@ section .container{
 
 .container:after,
 .row:after,
-.u-cf { 
+.u-cf {
   content: "";
   display: table;
-  clear: both; 
+  clear: both;
 }
 
 @media print {
@@ -929,7 +933,7 @@ section .container{
     }
 
     thead {
-        display: table-header-group; 
+        display: table-header-group;
     }
 
     tr,
