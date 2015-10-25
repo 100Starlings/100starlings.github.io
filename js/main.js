@@ -1,8 +1,8 @@
 /* header scroll */
 
 $(document).scroll(function(){
-     $('.header').toggleClass('header-scroll', $(this).scrollTop() > 25);
-     $('.welcome-icon').toggleClass('hide', $(this).scrollTop() > 50);
+   $('.header').toggleClass('header-scroll', $(this).scrollTop() > 25);
+   $('.welcome-icon').toggleClass('hide', $(this).scrollTop() > 50);
 });
 
 
@@ -10,11 +10,12 @@ $(document).scroll(function(){
 
 $(document).ready(function(){
   $(".scrolllink").click(function(e){
+    var id = $(this).attr("href");
+    if (id.match(/^\//)) return;
+
     e.preventDefault();
- 
-    var id     = $(this).attr("href");
     var offset = $(id).offset();
- 
+
     $("html, body").animate({
       scrollTop: offset.top - 100
     }, 1000);
@@ -25,15 +26,21 @@ $(document).ready(function(){
 /* menu */
 
 $('.btn-menu').click(function() {
-    $(this).toggleClass('open');
-    $('.phone-menu').fadeToggle('slow');
-    $('.phone-menu-item').each(function(i) {$(this).delay((i++) * 100).fadeToggle()});
+  $(this).toggleClass('open');
+  $('.phone-menu')
+    .fadeToggle('slow')
+    .find('.menu > li').each(function(i) {
+      $(this).delay((i++) * 100).fadeToggle();
+    });
 });
 
 $('.phone-menu .menu .scrolllink').click(function() {
-    $('.btn-menu').toggleClass('open');
-    $('.phone-menu').fadeToggle('slow');
-    $('.phone-menu-item').each(function(i) {$(this).delay((i++) * 100).fadeToggle()});    
+  $('.btn-menu').toggleClass('open');
+  $('.phone-menu')
+    .fadeToggle('slow')
+    .find('.menu > li').each(function(i) {
+      $(this).delay((i++) * 100).fadeToggle();
+    });
 });
 
 
