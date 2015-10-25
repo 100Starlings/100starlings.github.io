@@ -37,34 +37,26 @@ $('.phone-menu .menu .scrolllink').click(function() {
 });
 
 
-/* tabs */
-
-$(document).ready(function(){
-    
-    $('ul.tabs li').click(function(){
-        var tab_id = $(this).attr('data-tab');
-
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
-
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-    })
-
-});
-
-
 /* form validation */
 
-$("#form-contact").validate({
-  errorClass:'error',            
-  rules: {
-    fullname: "required",
-    message: "required",
-    emailaddress: {
-      required: true,
-      email: true
-    }
-  }
-});
+$("#form-contact").on("submit", function(e) {
+  var contactRequestsRef = new Firebase("https://100s-website.firebaseio.com/contact-requests"),
+      $form = $(this),
+      data = {},
+      dataArray = $form.serializeArray(),
+      formMessage = $form.find('.form-message').empty().removeClass('error').removeClass('success');
 
+  dataArray.forEach(function(kv) {
+    data[kv.name] = kv.value;
+  });
+
+  contactRequestsRef.push(data, function(err) {
+    if (err) {
+      formMessage.addClass('error').text("Error when submitting message: " + err.message);
+    } else {
+      formMessage.addClass('success').text("We have received your message and will get back to you soon.");
+    }
+  });
+
+  e.preventDefault();
+}).validate();

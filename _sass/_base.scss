@@ -687,12 +687,28 @@ section.content#team .social a.blog:hover{background: #f57d00;}
 
 /* contact */
 
-section#contact #form-contact{
-    max-width: 500px;
-    margin: 20px auto 0;
-}
+#form-contact {
+  max-width: 500px;
+  margin: 20px auto 0;
 
-section#contact #form-contact button{
+  .form-message {
+    margin: -10px 0 0;
+    border: 0;
+    padding: 0 5px;
+    font-size: 11px;
+
+    &.success {
+      background: hsl(176, 100%, 33%);
+      color: #fff;
+    }
+
+    &.error {
+      background: #ef3434;
+      color: #fff;
+    }
+  }
+
+  button {
     width: 100%;
     padding: 10px;
     display: block;
@@ -704,10 +720,11 @@ section#contact #form-contact button{
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
-}
 
-section#contact #form-contact button:hover{
-    color: #c0e4fe;
+    &:hover {
+      color: #c0e4fe;
+    }
+  }
 }
 
 footer {
