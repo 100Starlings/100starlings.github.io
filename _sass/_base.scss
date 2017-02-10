@@ -439,6 +439,9 @@ section .container{
     margin: auto;
 }
 
+.hashtag{
+  color: #00a79d;
+}
 
 /* welcome */
 
@@ -618,6 +621,21 @@ section.subheader .container h2{
     font-weight: 300;
     max-width: 760px;
     margin: 20px auto;
+}
+.career-adv{
+  height: 200px;
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: linear-gradient(270deg, rgba(10, 115, 133, 0.9),  rgba(34, 101, 159, 0.9));
+
+  a{
+    color: #fff;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 /* clients */
