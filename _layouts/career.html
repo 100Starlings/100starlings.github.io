@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<section class="subheader subheader-team">
+  <div class="container">
+    <h1>Career opportunities</h1>
+    <h2>Join our international team and shape the future of 100Starlings and your career for the better.</h2>
+  </div>
+</section>
+
+<section class="content" id="career-advert">
+  <div class="container">
+    <article class="post-content">
+      <h1>{{ page.title }}</h1>
+
+      <section id="career-intro">
+        <p>We are <strong>100Starlings</strong>, a group of like-minded individuals who work together for a set of clients. We’ve been very successful at having more work than we can handle - and that is taking its toll on us. We aren't a digital agency but a <span class="hashtag">#cooperative</span> that can offer the same services without the usual overhead.</p>
+
+        <p>We aren't designers ourselves, that's why we are looking for someone who has a sense of beauty and <span class="hashtag">#usability</span>. We need someone who can create and improve the <span class="hashtag">#digital</span> <span class="hashtag">#interface</span> of products that we are working on by making them <span class="hashtag">#intuitive</span> and <span class="hashtag">#simple</span> by the use of <span class="hashtag">#userexperience</span> and <span class="hashtag">#visual</span> design.</p>
+
+        <p>We need you for roughly <span class="hashtag">#3DaysAWeek</span> of which you’ll need to be in <span class="hashtag">#Watford</span> for 2 days working with a specific client.</p>
+      </section>
+
+      <section id="career-requirements">
+        <h2>What you can bring</h2>
+
+        {{ content }}
+      </section>
+
+      <section id="career-about-us">
+        <h2>A bit more about us</h2>
+
+        <p>What we can offer is a great team, competitive rates and all the benefits of working in a <span class="hashtag">#cooperative</span>, like a yearly <span class="hashtag">#trainingbudget</span> and an appreciation that we are all human beings.</p>
+
+        <p>You can be a permanent employee, or work contract. At the end of the day, it’s the hours you put in, and impact you produce that matters. You will be rewarded according to your skills. If you excel and contribute to success, we allocate bonuses based on individual performance as a means of profit sharing.</p>
+
+      </section>
+
+      <section id="career-cta">
+        <h2>HOW TO APPLY</h2>
+        <ul>
+          <li>Send examples of your work at
+            <strong>career@100starlings.com</strong>.</li>
+          <li>Do you have a blog or a twitter feed so that we could see what motivates you?</li>
+        </ul>
+
+      </section>
+
+      <!-- <section id="career-more">
+        <h2>We're also looking for:</h2>
+
+        <ul>
+          {% for advert in site.pages %}
+          {% if advert.path contains "career/" and advert.url != page.url %}
+            <li><a href="{{ advert.url }}">{{ advert.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </section> -->
+    </article>
+  </div>
+</section>
+
+<section class="break break-right">
+  <hr>
+  <div class="container"><span></span></div>
+</section>
+
+{% include contact.html %}

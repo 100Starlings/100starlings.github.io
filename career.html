@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: /career/
+---
+<section class="subheader subheader-team">
+  <div class="container">
+    <h1>Career opportunities</h1>
+    <h2>Join our international team and shape the future of 100Starlings and your career for the better.</h2>
+  </div>
+</section>
+
+<section class="content" id="career">
+  <div class="container">
+    {% for advert in site.pages %}
+    {% if advert.path contains "career/" %}
+      <div class="career-adv"><a href="{{ advert.url }}">{{ advert.title }}</a></div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="break break-right">
+  <hr>
+  <div class="container"><span></span></div>
+</section>
+
+{% include contact.html %}
