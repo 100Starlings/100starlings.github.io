@@ -1,0 +1,21 @@
+---
+layout: default
+title: "100Starlings blog"
+---
+
+<section class="subheader subheader-team">
+  <div class="container">
+    <h1>100s blog</h1>
+    <h2></h2>
+  </div>
+</section>
+
+<section class="content" id="blog">
+    <div class="container">
+        <ul class="posts">
+            {% for post in site.posts %}
+                <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

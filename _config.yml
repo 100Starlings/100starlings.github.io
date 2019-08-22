@@ -1,9 +1,10 @@
-title: 100Starlings
-email: info@100starlings.com
+title: "100Starlings"
+email: "info@100starlings.com"
 description: >
   We are a cooperative of like minded professionals skilled at solving problems
   and creating excellent products for today's digital world.
 url: "http://www.100starlings.com"
-github_username: 100Starlings
-
-safe: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+github_username: "100Starlings"
