@@ -856,6 +856,16 @@ section .container{
     padding: 0 20px;
 }
 
+section.break-left .container span{
+    right: 0;
+    left: auto;
+}
+
+section.break-right .container span{
+    left: 0;
+    right: auto;
+}
+
 }
 
 /* additional */
