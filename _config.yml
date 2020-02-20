@@ -7,4 +7,5 @@ url: "http://www.100starlings.com"
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jemoji
 github_username: "100Starlings"
