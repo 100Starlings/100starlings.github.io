@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: 100starlings/100starlings.github.io
 publish_mode: editorial_workflow
 media_folder: "img"
 collections:
@@ -14,6 +15,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["weeknotes"]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Tag", name: "tags", widget: "string", required: false, default: "weeknotes"}
       - {label: "Body", name: "body", widget: "markdown"}
