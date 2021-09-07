@@ -57,6 +57,11 @@ p {
     color: #4a4a4a;
 }
 
+h3  {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 hr {
     border: 0;
     border-top: solid 1px #e6e6e6;
@@ -539,6 +544,15 @@ section.content h1 {
     text-transform: uppercase;
     margin: 0;
     padding: 10px 0;
+}
+
+.ad-title   {
+    margin-bottom:  1.5rem !important;
+}
+
+.career-adv-title   {
+    text-decoration: none;
+    color: white;
 }
 
 section.content h1.title-center {
