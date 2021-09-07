@@ -10,11 +10,11 @@ permalink: /career/
 </section>
 
 <section class="content" id="career">
-  <class class="container">
+  <div class="container">
     {% for advert in site.pages %}
     {% if advert.path contains "career/" %}
     <a href="{{ advert.url }}" class="career-adv"><div class="career-adv-title">{{ advert.title }}</div></a>
-    </class>
+    </div>
     {% endif %}
     {% endfor %}
   </div>
