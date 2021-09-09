@@ -13,7 +13,7 @@ permalink: /career/
   <div class="container">
     {% for advert in site.pages %}
     {% if advert.path contains "career/" %}
-      <div class="career-adv"><a href="{{ advert.url }}">{{ advert.title }}</a></div>
+    <a href="{{ advert.url }}" class="career-adv"><div class="career-adv-title">{{ advert.title }}</div></a>
     {% endif %}
     {% endfor %}
   </div>

@@ -11,48 +11,12 @@ layout: default
 <section class="content" id="career-advert">
   <div class="container">
     <article class="post-content">
-      <h1>{{ page.title }}</h1>
-
-      <section id="career-intro">
-        <p>We are <strong>100Starlings</strong>, a group of like-minded individuals who work together for a set of clients. We’ve been very successful at having more work than we can handle - and that is taking its toll on us. We aren't a digital agency but a <span class="hashtag">#cooperative</span> that can offer the same services without the usual overhead.</p>
-      </section>
 
       <section id="career-requirements">
-        <h2>What you can bring</h2>
-
         {{ content }}
       </section>
 
-      <section id="career-about-us">
-        <h2>A bit more about us</h2>
 
-        <p>What we can offer is a great team, competitive rates and all the benefits of working in a <span class="hashtag">#cooperative</span>, like a yearly <span class="hashtag">#trainingbudget</span> and an appreciation that we are all human beings.</p>
-
-        <p>You can be a permanent employee, or work contract. At the end of the day, it’s the hours you put in, and impact you produce that matters. You will be rewarded according to your skills. If you excel and contribute to success, we allocate bonuses based on individual performance as a means of profit sharing.</p>
-
-      </section>
-
-      <section id="career-cta">
-        <h2>HOW TO APPLY</h2>
-        <ul>
-          <li>Send examples of your work at
-            <strong>career@100starlings.com</strong>.</li>
-          <li>Do you have a blog or a twitter feed so that we could see what motivates you?</li>
-        </ul>
-
-      </section>
-
-      <!-- <section id="career-more">
-        <h2>We're also looking for:</h2>
-
-        <ul>
-          {% for advert in site.pages %}
-          {% if advert.path contains "career/" and advert.url != page.url %}
-            <li><a href="{{ advert.url }}">{{ advert.title }}</a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </section> -->
     </article>
   </div>
 </section>
